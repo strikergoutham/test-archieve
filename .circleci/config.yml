@@ -14,7 +14,7 @@ jobs:
       - run: curl https://www.google.com
       - run: curl --request POST 
             --url 'https://prasanna-test.atlassian.net/rest/api/3/issue/SAM-1/transitions' 
-            --user 'prasannaramesh2000@gmail.com:4CmGGLIFRRoJNfi0fpEe03EB' 
+            --user 'prasannaramesh2000@gmail.com:KbfUzKvLRCkbLrOzbGQ1BF47' 
             --header 'Accept= application/json' 
             --header 'Content-Type= application/json' 
             --data '{"transition"= {"id"= "31"}}'

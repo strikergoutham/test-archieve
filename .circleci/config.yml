@@ -12,11 +12,11 @@ jobs:
       - run: echo "hello world" # run the `echo` command
       - run: python --version
       - run: curl https://www.google.com
-      - run: curl --request POST 
-            --url 'https://prasanna-test.atlassian.net/rest/api/3/issue/SAM-2/transitions' 
-            --user 'prasannaramesh2000@gmail.com:GiCs930ibx6ODxmyoqlyCF1B' 
-            --header 'Accept'.' application/json' 
-            --header 'Content-Type':' application/json' 
+      - run: curl --request POST \
+            --url 'https://prasanna-test.atlassian.net/rest/api/3/issue/SAM-2/transitions'  \
+            --user 'prasannaramesh2000@gmail.com:GiCs930ibx6ODxmyoqlyCF1B' \
+            --header 'Accept'.' application/json' \
+            --header 'Content-Type':' application/json' \
             --data '{"transition"':' {"id"':' "31"}}'
 
       

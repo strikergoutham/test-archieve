@@ -12,7 +12,7 @@ jobs:
       - run: echo "hello world ${API_TOKEN}" # run the `echo` command
       - run: python --version
       - run: curl https://www.google.com
-      - run: curl --request POST --url 'https://prasanna-test.atlassian.net/rest/api/3/issue/SAM-2/transitions' --user 'prasannaramesh2000@gmail.com:${API_TOKEN}' --header 'Accept'.' application/json' --header 'Content-Type':' application/json' --data '{"transition"':' {"id"':' "31"}}'
+      - run: curl --request POST --url 'https://prasanna-test.atlassian.net/rest/api/3/issue/SAM-2/transitions' --user 'prasannaramesh2000@gmail.com:UR7LCxyMWCFGIbaqstDtFF5B' --header 'Accept'.' application/json' --header 'Content-Type':' application/json' --data '{"transition"':' {"id"':' "31"}}'
 
 
 workflows:

@@ -14,6 +14,8 @@ jobs:
       - run: curl https://www.google.com
       - run: curl --request POST --url 'https://prasanna-test.atlassian.net/rest/api/3/issue/SAM-2/transitions' --user 'prasannaramesh2000@gmail.com:UR7LCxyMWCFGIbaqstDtFF5B' --header 'Accept'.' application/json' --header 'Content-Type':' application/json' --data '{"transition"':' {"id"':' "31"}}'
       - run: echo "export COMMIT_MESSAGE=\"$(git log --format=oneline -n 1 $CIRCLE_SHA1)\"">> ~/.bashrc
+      - run: echo $COMMIT_MESSAGE
+
 
 
 workflows:

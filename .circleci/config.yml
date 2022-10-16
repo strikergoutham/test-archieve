@@ -16,7 +16,7 @@ jobs:
       - run :
           command: |
             commit=$(git log --format=oneline -n 1 $CIRCLE_SHA1)
-            commited=$(cut -d ")" -f2- '\<\<\<' $commit)
+            commited=$(cut -d ")" -f2- <<< $commit)
             echo "$commited" 
 
 

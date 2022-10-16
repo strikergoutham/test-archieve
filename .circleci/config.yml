@@ -9,10 +9,7 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout # check out the code in the project directory
-      - run: echo "hello world ${API_TOKEN}" # run the `echo` command
-      - run: python --version
-      - run: curl https://www.google.com
-      - run: 
+      - run: echo "hello world ${API_TOKEN}" 
       - run :
           command: |
             commit=$(git log --format=oneline -n 1 $CIRCLE_SHA1 | cut -d " " -f2- )

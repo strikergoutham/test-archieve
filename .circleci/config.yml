@@ -11,11 +11,6 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout # check out the code in the project directory
-      - run :
-          command: |
-            commit=$(git log --format=oneline -n 1 $CIRCLE_SHA1 | cut -d " " -f2- )
-            echo "$commit" 
-            curl --request POST --url 'https://prasanna-test.atlassian.net/rest/api/3/issue/'$commit'/transitions' --user 'prasannaramesh2000@gmail.com:'${API_TOKEN}'' --header 'Accept'.' application/json' --header 'Content-Type':' application/json' --data '{"transition"':' {"id"':' "31"}}'
       - jira/notify:
           environment_type: staging
           environment: Staging

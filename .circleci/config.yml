@@ -18,7 +18,7 @@ jobs:
             curl --request POST --url 'https://prasanna-test.atlassian.net/rest/api/3/issue/'$commit'/transitions' --user 'prasannaramesh2000@gmail.com:'${API_TOKEN}'' --header 'Accept'.' application/json' --header 'Content-Type':' application/json' --data '{"transition"':' {"id"':' "31"}}'
       - jira/notify:
           environment_type: staging
-          environment: staging
+          environment: Staging
           job_type: deployment
 
 workflows:
